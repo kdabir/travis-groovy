@@ -8,6 +8,7 @@ before_script:
 
 script:
   - TERM=dumb groovy --version
+  - TERM=dumb groovy script.groovy some-arg
 
 jdk:
   - oraclejdk8
