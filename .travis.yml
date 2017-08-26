@@ -1,0 +1,13 @@
+
+before_script:
+  - export GROOVY_VERSION=2.4.12
+  - wget http://dl.bintray.com/groovy/maven/apache-groovy-binary-$GROOVY_VERSION.zip -O /tmp/groovy.zip
+  - unzip /tmp/groovy.zip -d $PWD/.groovy
+  - export PATH=$PATH:$PWD/.groovy/groovy-$GROOVY_VERSION/bin
+  - echo "groovy installed"
+
+script:
+  - TERM=dumb groovy --version
+
+jdk:
+  - oraclejdk8
