@@ -3,8 +3,10 @@ Execute groovy scripts on travis-ci
 
 [![Build Status](https://travis-ci.org/kdabir/travis-groovy.svg?branch=master)](https://travis-ci.org/kdabir/travis-groovy)
 
-- Example `script.groovy` included in the repo. Replaced it with groovy script(s) of choice. 
-- Multiple groovy scripts can be executed. 
+## How
+- Fork this repo and enable build on travis.
+- Example `script.groovy` included in the repo. Replace it with groovy script(s) of choice. 
+- Execute multiple groovy scripts by adding commands to `scripts` section in `.travis.yml`
 - All groovy scripting goodness like `Grab` available in the scripts.
 
 Here is the sample output
