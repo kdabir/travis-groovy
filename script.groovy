@@ -3,7 +3,3 @@ println message
 
 println "Access env variables : ${System.env.CI}" 
 println "Access command line args : ${args[0]}" 
-
-
-
-
