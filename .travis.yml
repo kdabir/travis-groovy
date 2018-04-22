@@ -1,3 +1,5 @@
+## it is not required to have language set as groovy, you may choose your project's lang.
+## the `before_script` block installs required groovy
 language: groovy
 
 before_script:
@@ -6,7 +8,7 @@ before_script:
   - wget http://dl.bintray.com/groovy/maven/apache-groovy-binary-$GROOVY_VERSION.zip -O /tmp/groovy.zip
   - unzip /tmp/groovy.zip -d $PWD/.groovy
   - export PATH=$PWD/.groovy/groovy-$GROOVY_VERSION/bin:$PATH
-  - echo "groovy installed"
+  - echo "groovy installed ${GROOVY_VERSION}"
 
 script:
   - TERM=dumb groovy --version
