@@ -1,3 +1,4 @@
+language: groovy
 
 before_script:
   - TERM=dumb groovy --version
